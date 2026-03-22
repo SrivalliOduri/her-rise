@@ -3,13 +3,14 @@ import { SiInstagram, SiLinkedin } from "react-icons/si";
 
 // ✏️ Update contact details here
 const CONTACT_INFO = {
-  email: "herrise.hyd@gmail.com", // ✏️ Update with official email
+  email: "herrise.hyd@gmail.com",
   instagram: "https://instagram.com/herrise.hyd",
   instagramHandle: "@herrise.hyd",
-  linkedin: "", // ✏️ Add LinkedIn URL when available
+  linkedin: "https://www.linkedin.com/in/herrise-hyd", // ✏️ Update LinkedIn URL if needed
+  linkedinHandle: "HER RISE",
 };
 
-// ✏️ Update team member contacts here
+// ✏️ Update team member contacts here — order: Bhavagna, Pradhiksha, Meghana, Srivalli, Samiksha
 const TEAM_CONTACTS = [
   { name: "Bhavagna Reddy", role: "Founder & Director", phone: "8309301075" },
   {
@@ -17,13 +18,13 @@ const TEAM_CONTACTS = [
     role: "Administrative Manager",
     phone: "8341693369",
   },
-  { name: "Samiksha Reddy", role: "Digital Media Head", phone: "9866969332" },
-  { name: "Srivalli Oduri", role: "Digital Media Head", phone: "8143846341" },
   {
     name: "Meghana Reddy",
     role: "Human Resources Manager",
     phone: "+91 99596 01124",
   },
+  { name: "Srivalli Oduri", role: "IT Support", phone: "8143846341" },
+  { name: "Samiksha Reddy", role: "Digital Media Head", phone: "9866969332" },
 ];
 
 const avatarColors = [
@@ -52,17 +53,13 @@ export default function Contact() {
       Icon: SiInstagram,
       color: "text-pink-600",
     },
-    ...(CONTACT_INFO.linkedin
-      ? [
-          {
-            platform: "LinkedIn",
-            handle: "HER RISE",
-            href: CONTACT_INFO.linkedin,
-            Icon: SiLinkedin,
-            color: "text-blue-600",
-          },
-        ]
-      : []),
+    {
+      platform: "LinkedIn",
+      handle: CONTACT_INFO.linkedinHandle,
+      href: CONTACT_INFO.linkedin,
+      Icon: SiLinkedin,
+      color: "text-blue-600",
+    },
   ];
 
   return (

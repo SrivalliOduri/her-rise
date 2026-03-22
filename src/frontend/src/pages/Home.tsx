@@ -41,37 +41,37 @@ const teamMembers = [
   {
     name: "Bhavagna Reddy",
     role: "Founder & Director",
-    study: "Second-year Fashion Design, Hyderabad",
+    study: "Second-year Fashion Design student, Hyderabad",
     photo: "/assets/uploads/BHAVAGNA-REDDY-2.jpeg",
-    desc: "Bhavagna Reddy is the Founder and Director of HER RISE. She is passionate about building initiatives that empower women, promote safety awareness, and create a supportive community through education and technology.",
+    desc: "Founder of HER RISE, dedicated to empowering women through safety awareness, community initiatives, and technology-driven support.",
   },
   {
     name: "Pradhiksha Reddy",
     role: "Administrative Manager",
     study: "Second-year Undergraduate, MGIT Hyderabad",
     photo: "/assets/uploads/PRADHIKSHA-REDDY-1.jpeg",
-    desc: "Pradhiksha Reddy manages administrative operations within HER RISE and helps organize activities, coordinate initiatives, and ensure smooth execution of programs.",
+    desc: "Oversees administrative coordination and supports the planning and organization of HER RISE initiatives and activities.",
   },
   {
     name: "Meghana Reddy",
     role: "Human Resources Manager",
-    study: "Second-year Fashion Design, Hyderabad",
+    study: "Second-year Fashion Design student, Hyderabad",
     photo: "/assets/uploads/MEGHANA-REDDY-5.jpeg",
-    desc: "Meghana Reddy serves as the Human Resources Manager at HER RISE and helps coordinate team collaboration, organizational planning, and internal communication.",
+    desc: "Manages team coordination and supports internal communication to ensure smooth collaboration within HER RISE.",
   },
   {
     name: "Srivalli Oduri",
-    role: "Digital Media Head",
+    role: "IT Support",
     study: "Second-year Undergraduate, MGIT Hyderabad",
     photo: "/assets/uploads/SRIVALLI-ODURI-3.jpeg",
-    desc: "Srivalli Oduri manages the digital presence of HER RISE including social media communication, awareness campaigns, and online engagement initiatives.",
+    desc: "Responsible for the technical development and maintenance of the HER RISE website and digital platforms.",
   },
   {
     name: "Samiksha Reddy",
     role: "Digital Media Head",
-    study: "Second-year Engineering, Hyderabad",
+    study: "Second-year Engineering student, Hyderabad",
     photo: "/assets/uploads/SAMIKSHA-REDDY-6.jpeg",
-    desc: "Samiksha Reddy contributes to the digital media initiatives of HER RISE by supporting online awareness programs and helping expand the organization's digital reach.",
+    desc: "Leads the digital presence of HER RISE by managing social media platforms, online campaigns, and technical coordination of digital content for awareness initiatives.",
   },
 ];
 
@@ -278,7 +278,7 @@ export default function Home() {
                 <p className="text-muted-foreground text-xs leading-relaxed mb-2">
                   {member.study}
                 </p>
-                <p className="text-muted-foreground text-xs leading-relaxed line-clamp-3">
+                <p className="text-muted-foreground text-xs leading-relaxed">
                   {member.desc}
                 </p>
               </div>
